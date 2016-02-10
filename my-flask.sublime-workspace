@@ -1,0 +1,543 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"reque",
+				"requests	module"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"txt",
+				"txtPins"
+			],
+			[
+				"onC",
+				"onclick	Attr"
+			],
+			[
+				"on",
+				"onchange	Attr"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nAnaconda\n--------\n\n  # Anaconda\n  Anaconda turns your Sublime Text 3 into a full featured Python IDE. Read the plugin documentation on [http://damnwidget.github.io/anaconda](http://damnwidget.github.io/anaconda).\n  \n  \n  ## Getting Started\n  Anaconda works out of the box but there are multitude of options and features that you can tune and adapt to your own style or needs.\n  \n  * [Autocompletion on dot](http://damnwidget.github.io/anaconda/IDE/#toc_3)\n  * [Powerful IDE](http://damnwidget.github.io/anaconda/IDE/)\n  * [Advanced Configuration](http://damnwidget.github.io/anaconda/anaconda_settings/)\n  * [Run Tests using Anaconda](http://damnwidget.github.io/anaconda/tests_runner/)\n  * [Linting theme customization](http://damnwidget.github.io/anaconda/IDE/#toc_50)\n  * [Using Vagrant Environments](http://damnwidget.github.io/anaconda/vagrant/)\n  \n  ## License\n  This program is distributed under the terms of the GNU GPL v3. See the [LICENSE][license] file for more details.\n  \n  ## Tooltips\n  anaconda officially supports user themeable tooltips and displaying advanced signatures. This is how it looks in a dark theme:\n  \n  ![Tooltips Image][tooltips-dark-image]\n  \n  **Note**: This feature is enabled for users of Sublime Text 3 build 3070 or superior only.\n  \n  ## Troubleshooting\n  This section lists some common issues faced by users, along with workarounds.\n  \n  #### Anaconda does not appear in the Available Packages list on Package Control.\n  \n  **Work-around**: You have to update your Package Control version to the version 2.0 or better.\n  \n  #### Errors in the console about \"the file can't be open\" in worker.py file.\n  Your Sublime Text can't find the interpreter that you set in your configuration, by default, anaconda sets this as `python` so it will get your configured Python interpreter in your PATH (if any).\n  \n  **Work-around**: Add a Python interpreter (named `python`) to your PATH or set a right full path to your python interpreter as parameter of `python_interpreter` settings option, for example `/usr/local/bin/python3.4`.\n  \n  #### Auto-complete for import behaves badly.\n  Sublime Text 3's default Python package cancels the auto-completion when some words are detected (for example `def` or `class`). This list of words includes `import`.\n  \n  **Work-around**: Create a new Python directory in your Packages directory and copy the contents of the file [Completion Rules.tmPreferences][Completion-Rules] there with the same name.\n  Delete your Sublime Text Cache file `Cache/Python/Completion Rules.tmPreferences.cache`.\n  \n  **NOTE**: The cache path can be optained from the Sublime TExt 3 console using the code `sublime.cache_path()`\n  \n  #### Auto-complete drop-down shows up incorrectly.\n  SublimeCodeIntel interferes with anaconda's auto-completion.\n  \n  **Work-around**: Consider disabling SublimeCodeIntel for Python views or disabling/removing it completely when using anaconda.\n  \n  ## Contributing to Anaconda\n  There are several ways to contribute with anaconda.\n  \n  > Note: A [Developers Documentation book][dev-docs] is maintained up to date with the latest information about anaconda's internals and useful information about how to contribute to the project.\n  \n  ### Feedback\n  Giving feedback about the plugin and how it works in your platform, helps make the plugin better.\n  \n  ### Bug Hunting\n  Did you found a bug and you know how to fix it? First of all, Thank you very much. You just have to report the bug as a new issue, fork the repository, make your changes and send a new pull request.\n  \n  ### Suggesting and Implementing Features\n  So you thought of a new killer feature to implement in Anaconda? Great! Open an issue for it and and we will discuss it with you.\n  \n  ### Donations\n  Please donate to help keep this project alive.\n  \n  [![PayPal][paypal-donate-image]][paypal-donate-link]\n  [![Flatter][flatter-image]][flatter-link]\n  \n  [license]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/LICENSE\n  [Completion-Rules]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/Completion%20Rules.tmPreferences\n  [dev-docs]: http://damnwidget.gitbooks.io/anacondast3-developers-documentation/\n  [paypal-donate-image]: https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\n  [paypal-donate-link]: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KP7PAHR962UGG&lc=US&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\n  [flatter-image]: https://api.flattr.com/button/flattr-badge-large.png\n  [flatter-link]: http://flattr.com/thing/1765332/DamnWidgetanaconda-on-GitHub\n  [tooltips-dark-image]: http://damnwidget.github.io/anaconda/img/tooltips.png\n",
+			"settings":
+			{
+				"buffer_size": 4731,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "// Place your settings in the file \"User/Preferences.sublime-settings\", which\n// overrides the settings in here.\n//\n// Settings may also be placed in file type specific options files, for\n// example, in Packages/Python/Python.sublime-settings for python files.\n{\n    // Sets the colors used within the text area\n    \"color_scheme\": \"Packages/Color Scheme - Default/Monokai.tmTheme\",\n\n    // Note that the font_face and font_size are overridden in the platform\n    // specific settings file, for example, \"Preferences (Linux).sublime-settings\".\n    // Because of this, setting them here will have no effect: you must set them\n    // in your User File Preferences.\n    \"font_face\": \"\",\n    \"font_size\": 10,\n\n    // Valid options are \"no_bold\", \"no_italic\", \"no_antialias\", \"gray_antialias\",\n    // \"subpixel_antialias\", \"no_round\" (OS X only), \"gdi\" (Windows only) and\n    // \"directwrite\" (Windows only)\n    \"font_options\": [],\n\n    // Characters that are considered to separate words\n    \"word_separators\": \"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?\",\n\n    // Set to false to prevent line numbers being drawn in the gutter\n    \"line_numbers\": true,\n\n    // Set to false to hide the gutter altogether\n    \"gutter\": true,\n\n    // Spacing between the gutter and the text\n    \"margin\": 4,\n\n    // Fold buttons are the triangles shown in the gutter to fold regions of text\n    \"fold_buttons\": true,\n\n    // Hides the fold buttons unless the mouse is over the gutter\n    \"fade_fold_buttons\": true,\n\n    // Columns in which to display vertical rulers\n    \"rulers\": [],\n\n    // Set to true to turn spell checking on by default\n    \"spell_check\": false,\n\n    // The number of spaces a tab is considered equal to\n    \"tab_size\": 4,\n\n    // Set to true to insert spaces when tab is pressed\n    \"translate_tabs_to_spaces\": false,\n\n    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and\n    // backspace insert/delete up to the next tabstop\n    \"use_tab_stops\": true,\n\n    // Set to false to disable detection of tabs vs. spaces on load\n    \"detect_indentation\": true,\n\n    // Calculates indentation automatically when pressing enter\n    \"auto_indent\": true,\n\n    // Makes auto indent a little smarter, e.g., by indenting the next line\n    // after an if statement in C. Requires auto_indent to be enabled.\n    \"smart_indent\": true,\n\n    // Adds whitespace up to the first open bracket when indenting. Requires\n    // auto_indent to be enabled.\n    \"indent_to_bracket\": false,\n\n    // Trims white space added by auto_indent when moving the caret off the\n    // line.\n    \"trim_automatic_white_space\": true,\n\n    // Disables horizontal scrolling if enabled.\n    // May be set to true, false, or \"auto\", where it will be disabled for\n    // source code, and otherwise enabled.\n    \"word_wrap\": \"auto\",\n\n    // Set to a value other than 0 to force wrapping at that column rather than the\n    // window width\n    \"wrap_width\": 0,\n\n    // Set to false to prevent word wrapped lines from being indented to the same\n    // level\n    \"indent_subsequent_lines\": true,\n\n    // Draws text centered in the window rather than left aligned\n    \"draw_centered\": false,\n\n    // Controls auto pairing of quotes, brackets etc\n    \"auto_match_enabled\": true,\n\n    // Word list to use for spell checking\n    \"dictionary\": \"Packages/Language - English/en_US.dic\",\n\n    // Sets which scopes are checked for spelling errors\n    \"spelling_selector\": \"markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)\",\n\n    // Set to true to draw a border around the visible rectangle on the minimap.\n    // The color of the border will be determined by the \"minimapBorder\" key in\n    // the color scheme\n    \"draw_minimap_border\": false,\n\n    // Always visualise the viewport on the minimap, as opposed to only\n    // showing it on mouse over\n    \"always_show_minimap_viewport\": false,\n\n    // If enabled, will highlight any line with a caret\n    \"highlight_line\": false,\n\n    // Valid values are \"smooth\", \"phase\", \"blink\" and \"solid\".\n    \"caret_style\": \"smooth\",\n\n    // These settings control the size of the caret\n    \"caret_extra_top\": 0,\n    \"caret_extra_bottom\": 0,\n    \"caret_extra_width\": 0,\n\n    // Set to false to disable underlining the brackets surrounding the caret\n    \"match_brackets\": true,\n\n    // Set to false if you'd rather only highlight the brackets when the caret is\n    // next to one\n    \"match_brackets_content\": true,\n\n    // Set to false to not highlight square brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_square\": true,\n\n    // Set to false to not highlight curly brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_braces\": true,\n\n    // Set to false to not highlight angle brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_angle\": false,\n\n    // Enable visualization of the matching tag in HTML and XML\n    \"match_tags\": true,\n\n    // Highlights other occurrences of the currently selected text\n    \"match_selection\": true,\n\n    // Additional spacing at the top of each line, in pixels\n    \"line_padding_top\": 0,\n\n    // Additional spacing at the bottom of each line, in pixels\n    \"line_padding_bottom\": 0,\n\n    // Set to false to disable scrolling past the end of the buffer.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"scroll_past_end\": true,\n\n    // This controls what happens when pressing up or down when on the first\n    // or last line.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"move_to_limit_on_up_down\": false,\n\n    // Set to \"none\" to turn off drawing white space, \"selection\" to draw only the\n    // white space within the selection, and \"all\" to draw all white space\n    \"draw_white_space\": \"selection\",\n\n    // Set to false to turn off the indentation guides.\n    // The color and width of the indent guides may be customized by editing\n    // the corresponding .tmTheme file, and specifying the colors \"guide\",\n    // \"activeGuide\" and \"stackGuide\"\n    \"draw_indent_guides\": true,\n\n    // Controls how the indent guides are drawn, valid options are\n    // \"draw_normal\" and \"draw_active\". draw_active will draw the indent\n    // guides containing the caret in a different color.\n    \"indent_guide_options\": [\"draw_normal\"],\n\n    // Set to true to removing trailing white space on save\n    \"trim_trailing_white_space_on_save\": false,\n\n    // Set to true to ensure the last line of the file ends in a newline\n    // character when saving\n    \"ensure_newline_at_eof_on_save\": false,\n\n    // Set to true to automatically save files when switching to a different file\n    // or application\n    \"save_on_focus_lost\": false,\n\n    // Save via writing to an alternate file, and then renaming it over the\n    // original file.\n    \"atomic_save\": false,\n\n    // The encoding to use when the encoding can't be determined automatically.\n    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.\n    \"fallback_encoding\": \"Western (Windows 1252)\",\n\n    // Encoding used when saving new files, and files opened with an undefined\n    // encoding (e.g., plain ascii files). If a file is opened with a specific\n    // encoding (either detected or given explicitly), this setting will be\n    // ignored, and the file will be saved with the encoding it was opened\n    // with.\n    \"default_encoding\": \"UTF-8\",\n\n    // Files containing null bytes are opened as hexadecimal by default\n    \"enable_hexadecimal_encoding\": true,\n\n    // Determines what character(s) are used to terminate each line in new files.\n    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and\n    // 'unix' (LF only).\n    \"default_line_ending\": \"system\",\n\n    // When enabled, pressing tab will insert the best matching completion.\n    // When disabled, tab will only trigger snippets or insert a tab.\n    // Shift+tab can be used to insert an explicit tab when tab_completion is\n    // enabled.\n    \"tab_completion\": true,\n\n    // Enable auto complete to be triggered automatically when typing.\n    \"auto_complete\": true,\n\n    // The maximum file size where auto complete will be automatically triggered.\n    \"auto_complete_size_limit\": 4194304,\n\n    // The delay, in ms, before the auto complete window is shown after typing\n    \"auto_complete_delay\": 50,\n\n    // Controls what scopes auto complete will be triggered in\n    \"auto_complete_selector\": \"source - comment, meta.tag - punctuation.definition.tag.begin\",\n\n    // Additional situations to trigger auto complete\n    \"auto_complete_triggers\": [ {\"selector\": \"text.html\", \"characters\": \"<\"} ],\n\n    // By default, auto complete will commit the current completion on enter.\n    // This setting can be used to make it complete on tab instead.\n    // Completing on tab is generally a superior option, as it removes\n    // ambiguity between committing the completion and inserting a newline.\n    \"auto_complete_commit_on_tab\": false,\n\n    // Controls if auto complete is shown when snippet fields are active.\n    // Only relevant if auto_complete_commit_on_tab is true.\n    \"auto_complete_with_fields\": false,\n\n    // Controls what happens when pressing the up key while the first item in\n    // the auto complete window is selected: if false, the window is hidden,\n    // otherwise the last item in the window is selected. Likewise for the\n    // down key when the last item is selected.\n    \"auto_complete_cycle\": false,\n\n    // Automatically close HTML and XML tags when </ is entered.\n    \"auto_close_tags\": true,\n\n    // By default, shift+tab will only unindent if the selection spans\n    // multiple lines. When pressing shift+tab at other times, it'll insert a\n    // tab character - this allows tabs to be inserted when tab_completion is\n    // enabled. Set this to true to make shift+tab always unindent, instead of\n    // inserting tabs.\n    \"shift_tab_unindent\": false,\n\n    // If true, the copy and cut commands will operate on the current line\n    // when the selection is empty, rather than doing nothing.\n    \"copy_with_empty_selection\": true,\n\n    // If true, the selected text will be copied into the find panel when it's\n    // shown.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"find_selected_text\": true,\n\n    // When auto_find_in_selection is enabled, the \"Find in Selection\" flag\n    // will be enabled automatically when multiple lines of text are selected\n    \"auto_find_in_selection\": false,\n\n    // When drag_text is enabled, clicking on selected text will begin a\n    // drag-drop operation. This is not currently implemented under Linux.\n    \"drag_text\": true,\n\n    //\n    // User Interface Settings\n    //\n\n    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)\n    \"theme\": \"Default.sublime-theme\",\n\n    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to\n    // scroll slower, or set to larger than 1 to scroll faster\n    \"scroll_speed\": 1.0,\n\n    // Controls side bar animation when expanding or collapsing folders\n    \"tree_animation_enabled\": true,\n\n    // Controls animation throughout the application\n    \"animation_enabled\": true,\n\n    // Makes tabs with modified files more visible\n    \"highlight_modified_tabs\": false,\n\n    \"show_tab_close_buttons\": true,\n\n    // Show folders in the side bar in bold\n    \"bold_folder_labels\": false,\n\n    // OS X only: Set to true to disable Lion style full screen support.\n    // Sublime Text must be restarted for this to take effect.\n    \"use_simple_full_screen\": false,\n\n    // OS X only. Valid values are true, false, and \"auto\". Auto will enable\n    // the setting when running on a screen 2560 pixels or wider (i.e., a\n    // Retina display). When this setting is enabled, OpenGL is used to\n    // accelerate drawing. Sublime Text must be restarted for changes to take\n    // effect.\n    \"gpu_window_buffer\": \"auto\",\n\n    // Valid values are \"system\", \"enabled\" and \"disabled\"\n    \"overlay_scroll_bars\": \"system\",\n\n    // Allows tabs to scroll left and right, instead of simply shrinking\n    \"enable_tab_scrolling\": true,\n\n    // Display file encoding in the status bar\n    \"show_encoding\": false,\n\n    // Display line endings in the status bar\n    \"show_line_endings\": false,\n\n    //\n    // Application Behavior Settings\n    //\n\n    // Exiting the application with hot_exit enabled will cause it to close\n    // immediately without prompting. Unsaved modifications and open files will\n    // be preserved and restored when next starting.\n    //\n    // Closing a window with an associated project will also close the window\n    // without prompting, preserving unsaved changes in the workspace file\n    // alongside the project.\n    \"hot_exit\": true,\n\n    // remember_full_screen will allow Sublime Text to start in full screen\n    // mode if it was exited in full screen mode. When set to false, Sublime\n    // Text will never start in full screen mode.\n    \"remember_full_screen\": false,\n\n    // Always prompt before reloading a file, even if the file hasn't been\n    // modified. The default behavior is to automatically reload a file if it\n    // hasn't been edited. If a file has unsaved changes, a prompt will always\n    // be shown.\n    \"always_prompt_for_file_reload\": false,\n\n    // OS X only: When files are opened from finder, or by dragging onto the\n    // dock icon, this controls if a new window is created or not.\n    \"open_files_in_new_window\": true,\n\n    // OS X only: This controls if an empty window is created at startup or not.\n    \"create_window_at_startup\": true,\n\n    // Set to true to close windows as soon as the last file is closed, unless\n    // there's a folder open within the window.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"close_windows_when_empty\": false,\n\n    // Show the full path to files in the title bar.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"show_full_path\": true,\n\n    // Shows the Build Results panel when building. If set to false, the Build\n    // Results can be shown via the Tools/Build Results menu.\n    \"show_panel_on_build\": true,\n\n    // Preview file contents when clicking on a file in the side bar. Double\n    // clicking or editing the preview will open the file and assign it a tab.\n    \"preview_on_click\": true,\n\n    // folder_exclude_patterns and file_exclude_patterns control which files\n    // are listed in folders on the side bar. These can also be set on a per-\n    // project basis.\n    \"folder_exclude_patterns\": [\".svn\", \".git\", \".hg\", \"CVS\"],\n    \"file_exclude_patterns\": [\"*.pyc\", \"*.pyo\", \"*.exe\", \"*.dll\", \"*.obj\",\"*.o\", \"*.a\", \"*.lib\", \"*.so\", \"*.dylib\", \"*.ncb\", \"*.sdf\", \"*.suo\", \"*.pdb\", \"*.idb\", \".DS_Store\", \"*.class\", \"*.psd\", \"*.db\", \"*.sublime-workspace\"],\n    // These files will still show up in the side bar, but won't be included in\n    // Goto Anything or Find in Files\n    \"binary_file_patterns\": [\"*.jpg\", \"*.jpeg\", \"*.png\", \"*.gif\", \"*.ttf\", \"*.tga\", \"*.dds\", \"*.ico\", \"*.eot\", \"*.pdf\", \"*.swf\", \"*.jar\", \"*.zip\"],\n\n    // File indexing parses all files in the side bar, and builds an index of\n    // their symbols. This is required for Goto Definition to work.\n    \"index_files\": true,\n\n    // Set the number threads to use for indexing. A value of 0 will make\n    // Sublime Text guess based on the number of cores. Use the index_files\n    // setting to disable all workers.\n    \"index_workers\": 0,\n\n    // index_exclude_patterns indicate which files won't be indexed.\n    \"index_exclude_patterns\": [\"*.log\"],\n\n    // When enabled, anonymised usage data is sent back, assisting Sublime HQ\n    // in making informed decisions about improving Sublime Text. File names\n    // and file contents are never included, but data such as computer\n    // specifications, startup time, installed packages, and edited file types\n    // are. When disabled, telemetry is neither recorded or sent.\n    // A setting of auto will enable telemetry in dev builds, and disable\n    // telemetry in regular builds.\n    \"enable_telemetry\": \"auto\",\n\n    // List any packages to ignore here. When removing entries from this list,\n    // a restart may be required if the package contains plugins.\n    \"ignored_packages\": [\"Vintage\"]\n}\n",
+			"file": "/C/Users/gofaniyi/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 16856,
+				"line_ending": "Windows",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Users/gofaniyi/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 91,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.py",
+			"settings":
+			{
+				"buffer_size": 1324,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "anapep",
+		"selected_items":
+		[
+			[
+				"anapep",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"anapyth",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"packainst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/gofaniyi/Desktop/my-flask"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/seegad/dashboard/active-projects.html",
+		"/C/wamp/www/seegad/dashboard/all-projects.html",
+		"/C/wamp/www/seegad/workspace/index.html",
+		"/C/wamp/www/seegad/reset-password.html",
+		"/C/wamp/www/seegad/dashboard/employee-summary.html",
+		"/C/wamp/www/js/tasks.js",
+		"/C/wamp/www/seegad/js/tasks.js",
+		"/C/wamp/www/seegad/workspace/indexold.html",
+		"/C/Applications/seegad/workspace/index.html",
+		"/C/Applications/seegad/css/patch.css",
+		"/C/Applications/seegad/workspace/milestones.html",
+		"/C/Applications/seegad/workspace/project.html",
+		"/C/wamp/www/seegad/workspace/time-sheet.html",
+		"/C/Applications/seegad/workspace/group.html",
+		"/C/wamp/www/seegad/workspace/group.html",
+		"/C/Applications/djangoprojects/seegad-dev/ChangeLog.md",
+		"/C/Applications/seegad/css/bootstrap-timepicker.css",
+		"/C/Users/gofaniyi/Downloads/project-workspace.html",
+		"/C/Users/gofaniyi/Desktop/settings.py",
+		"/C/Users/gofaniyi/Desktop/settings_sandbox.py",
+		"/C/Applications/seegad/js/tasks.js",
+		"/C/Applications/seegad/workspace/index-blank.html",
+		"/C/Applications/seegad/workspace/time-sheet.html",
+		"/C/Applications/seegad-live information/seegad_bundle.crt",
+		"/C/Users/gofaniyi/Downloads/Quality Policy doc.html",
+		"/C/Applications/seegad-live information/django",
+		"/C/Applications/seegad/workspace/timesheet-everyone.html",
+		"/C/Users/gofaniyi/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/gofaniyi/AppData/Local/Temp/fz3temp-2/database_details.php",
+		"/C/Applications/seegad/js/script.js",
+		"/C/Applications/seegad/js/timesheet.js",
+		"/C/Applications/seegad/js/workspace-actions.js",
+		"/C/Applications/seegad/workspace/expenses.html",
+		"/C/Applications/seegad/js/app.js",
+		"/C/Applications/seegad/settings/users.html",
+		"/C/Users/gofaniyi/Desktop/offline-master/offline-master/test/index.html",
+		"/C/Users/gofaniyi/Desktop/offline-master/offline-master/offline.js",
+		"/C/Users/gofaniyi/Desktop/offline-master/offline-master/offline.min.js",
+		"/C/Applications/seegad/dashboard/all-clients.html",
+		"/C/Applications/seegad/dashboard/active-clients.html",
+		"/C/Applications/seegad/dashboard/active-projects.html",
+		"/C/Applications/seegad/dashboard/all-employees.html",
+		"/C/Applications/seegad/dashboard/all-projects.html",
+		"/C/Applications/seegad/dashboard/employee-summary.html",
+		"/C/Applications/seegad/dashboard/index.html",
+		"/C/Applications/seegad/workspace/workview.html",
+		"/C/Applications/seegad/login.html",
+		"/C/Applications/seegad/index.html",
+		"/C/Applications/seegad/forgot-password.html",
+		"/C/Users/gofaniyi/Downloads/xing_industries.json",
+		"/C/Users/gofaniyi/Downloads/Compressed/Chrome-like-jQuery-Autocomplete-Autosuggest-Plugin-typeAhead/demo/index.html",
+		"/C/Users/gofaniyi/Downloads/Compressed/Simple-Inline-Autocomplete-Autosuggest-Plugin-suggest-js/index.html",
+		"/C/Applications/djangoprojects/seegad-dev/static/json/main",
+		"/C/Applications/djangoprojects/seegad-dev/static/json/employees",
+		"/C/Users/gofaniyi/Desktop/Pure-CSS3-Loading-master/Pure-CSS3-Loading-master/style.css",
+		"/C/Users/gofaniyi/Desktop/Pure-CSS3-Loading-master/Pure-CSS3-Loading-master/effect2.html",
+		"/C/wamp/www/brio-web/template/index.html",
+		"/C/wamp/www/brio-web/template/assets/js/plugins/calendar/events.json.php",
+		"/C/Applications/djangoprojects/asesqueproject-no-repo/useraccount/urls.py",
+		"/C/Users/gofaniyi/Desktop/chargebee-samples-master/chargebee-samples-master/php/error_pages/404.html",
+		"/C/Users/gofaniyi/Desktop/chargebee-samples-master/chargebee-samples-master/php/error_pages/500.html",
+		"/C/Applications/djangoprojects/asesqueproject-no-repo/asesqueproject/settings.py",
+		"/C/Users/gofaniyi/AppData/Local/Temp/fz3temp-1/index_advert.php",
+		"/C/wamp/www/churchproject/midweekservice.html",
+		"/C/Users/gofaniyi/Desktop/portatwsf.sql",
+		"/C/Applications/djangoprojects/asesqueproject/home/views.py",
+		"/C/Applications/djangoprojects/asesqueproject/useraccount/controllers.py",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/templates/quizapp/examquestions.html",
+		"/C/Applications/djangoprojects/asesqueproject/asesqueproject/settings.py",
+		"/C/Applications/djangoprojects/asesqueproject/asesqueproject/urls.py",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/views.py",
+		"/C/Applications/djangoprojects/asesqueproject/home/urls.py",
+		"/C/Users/gofaniyi/Desktop/seegadChanges.sql",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/models.py",
+		"/C/Applications/djangoprojects/asesqueproject/tutorapp/views.py",
+		"/C/Applications/djangoprojects/asesqueproject/tutorapp/templates/tutorapp/upload.html",
+		"/C/Applications/djangoprojects/asesqueproject/tutorapp/templates/tutorapp/editprofile.html",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/templates/quizapp/dashboard.html",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/templates/quizapp/question_vendors.html",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/templates/quizapp/performance.html",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/templates/quizapp/examdetails.html",
+		"/C/Applications/djangoprojects/asesqueproject/community/templates/community/allquestions.html",
+		"/C/Applications/djangoprojects/asesqueproject/community/templates/community/askquestions.html",
+		"/C/Applications/djangoprojects/asesqueproject/quizapp/templates/quizapp/examscoreboard.html",
+		"/C/Applications/djangoprojects/asesqueproject/home/templates/home/index.html",
+		"/C/Applications/djangoprojects/asesqueproject/useraccount/templates/useraccount/signup.html",
+		"/C/Applications/seegad/settings/report.html",
+		"/C/Applications/seegad/settings/template.html",
+		"/C/Applications/seegad/settings/index.html",
+		"/C/Applications/seegad/settings/feedback.html",
+		"/C/Applications/seegad/settings/account.html",
+		"/C/Applications/seegad/settings/newsletter.html",
+		"/C/Applications/seegad/dashboard-company.html",
+		"/C/Applications/seegad/dashboard/company.html",
+		"/C/Applications/seegad/dashboard/company-blank.html",
+		"/C/Applications/seegad/workspace/employee-workview.html",
+		"/C/Applications/seegad/dashboard-employees-blank.html",
+		"/C/Applications/seegad/css/dashboard.min.css",
+		"/C/Applications/seegad/js/workview.js",
+		"/C/Applications/seegad/employee-workview.html",
+		"/C/Users/gofaniyi/Desktop/company.html",
+		"/C/Applications/seegad/dashboard-client.html",
+		"/C/Applications/djangoprojects/asesqueproject/community/urls.py",
+		"/C/Applications/djangoprojects/asesqueproject/community/views.py",
+		"/C/Applications/djangoprojects/asesqueproject/community/templates/commdashboard.html",
+		"/C/Applications/djangoprojects/asesqueproject/community/controllers.py",
+		"/c/Applications/seegad-dev/README.md",
+		"/F/MySQL Backups/asesque.sql",
+		"/c/Applications/SeegadProject/tables_creation_wo_constraints.sql",
+		"/c/Applications/SeegadProject/tables_creation_w_constraints.sql",
+		"/C/Users/gofaniyi/Documents/seegad1.sql",
+		"/c/Applications/SeegadProject/truncate_tables.sql",
+		"/C/Users/gofaniyi/Documents/seegad.sql",
+		"/c/Applications/SeegadProject/tables_creation_wo_constraints.txt",
+		"/c/Applications/SeegadProject/select_tables.sql",
+		"/c/Applications/SeegadProject/insert_tables.sql",
+		"/c/Applications/SeegadProject/db_issues.txt",
+		"/c/Applications/SeegadProject/db_issues.sql",
+		"/c/Applications/SeegadProject/db_archi_questions.txt",
+		"/D/asesque.sql",
+		"/C/Applications/djangovirtual/mysite/manage.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Applications\\seegad\\css",
+			"C:\\Applications\\seegad\\js",
+			"C:\\Applications\\seegad\\css",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"employeeList",
+			"emplpyee",
+			"viewTask",
+			"waitMe",
+			"Revenue",
+			"null",
+			"load-more",
+			"waitMe",
+			"waitMe_ex",
+			"<li data-task-id=\"EktEGhFDg\" class=\"open\"><a href=\"https://app.seegad.com/activity?object=Tasks&amp;id=EktEGhFDg&amp;accountId=4yoeNu4le&amp;milestoneId=V1ehW2Kwl&amp;projectId=EykdZ2tvx&amp;ownerId=EJgoeVdEgg\" class=\"tasklink open-task-chat\" data-taskcreator=\"\" data-taskownerid=\"EJgoeVdEgg\" data-taskowner=\"Olaoluwa Faniyi\" id=\"EktEGhFDg\" data-title=\"Comment on Interface class\"></a><a class=\"taskicon close-task\" data-target=\"webuiPopover12\"><i class=\"ion-android-checkbox-outline-blank\"></i></a><a class=\"taskicon open-task\"><i class=\"ion-checkmark-round\"></i></a><div class=\"task-box\"><span class=\"tasktitle\">Comment on Interface class</span><span class=\"tasklog label label-primary\">Log Time</span>",
+			"edit",
+			"list-group",
+			"manageBudget",
+			"editGroup",
+			"list-g",
+			"group",
+			"ALLOWED_HOSTS",
+			"group-info",
+			"new-group",
+			"newProject",
+			"deadline",
+			"%;\n",
+			"clients",
+			"timepicker_noPeriodLabels",
+			"newLogHistory",
+			"viewTask",
+			"John Doe\n\nLorem ipsum dolor sit amet, consectetur adipisicing.",
+			"expenseCa",
+			"ion-android-cancel",
+			"ion-android-canvel",
+			"text-primary",
+			"editUser",
+			"addMilestone",
+			"login",
+			"NJuXB2s6",
+			"EyIiH2jT",
+			"V1AdOpsa",
+			"id",
+			"GET",
+			"filterQuestion",
+			"FormData",
+			"upload",
+			"moda",
+			"@R81rgH",
+			"@E39mNW",
+			"toggle",
+			"sweetalert",
+			"active"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"None"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4731,
+								4731
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/gofaniyi/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7044,
+								7016
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 2343.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/gofaniyi/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1273,
+								1273
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 77.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "my-flask.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 361.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
